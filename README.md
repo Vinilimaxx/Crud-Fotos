@@ -1,3 +1,2 @@
-# Alurapic
-
-Projeto em andamento
+# Crud-Fotos
+Crud utilizando html/css/javascript/mongo.db/node.js

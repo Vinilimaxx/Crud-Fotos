@@ -1,8 +1,11 @@
-var http = require('http')
-    ,app = require('./config/express')
-    db = require('./config/database');
+var http = require('http');
+var app = require('./config/express.js')
 
-http.createServer(app).listen(3000, function() {
-    console.log('Servidor estutando na porta: ' + this.address().port);
-});
+require('./config/database.js')('localhost/alurapic');
 
+http.createServer(app).listen(8080, function(){
+    
+    console.log(`Servidor escutando em http://localhost:${8080}`) 
+})
+
+ 
